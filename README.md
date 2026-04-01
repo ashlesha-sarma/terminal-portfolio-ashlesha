@@ -3,11 +3,11 @@
 ![Deploy](https://img.shields.io/badge/Deployed-Vercel-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 > A personal portfolio that looks and feels like a real Unix terminal.
 
-**[Live Demo →](https://termfolio-ashlesha.vercel.app)**
+**[Live Demo →](https://terminal-portfolio-ashlesha.vercel.app)**
 
 ---
 
