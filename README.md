@@ -33,19 +33,6 @@
 | `Ctrl+L` | Clear terminal |
 | Click anywhere | Refocus input |
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-## Deploy to Vercel
-
-```bash
-npm install -g vercel
-vercel
-```
 
 ## Stack
 
@@ -54,30 +41,5 @@ vercel
 - **Tailwind CSS v3** — terminal aesthetic utility classes
 - **reactbits.dev** — Typewriter + TextScramble animations
 
-## Adding a New Command
-
-1. Create `src/commands/blog.tsx` and export a `BlogOutput` component
-2. In `src/commands/index.tsx`, add one line: `blog: () => <BlogOutput />`
-
-That's it. Zero other changes needed.
-
-## Architecture
-
-```
-src/
-├── commands/       # Each command = one file + one export
-│   ├── index.tsx   # Registry: Record<string, CommandHandler>
-│   └── ...
-├── components/     # Terminal shell, input, output, lines
-├── hooks/          # useTerminal, useHistory, useAutocomplete
-├── types/          # All TypeScript types in one place
-└── data/           # Your portfolio content (edit this!)
-```
-
-## Customisation
-
-All your personal content lives in **`src/data/portfolio.ts`** — edit your name, bio, projects, skills, and contact links there.
-
----
 
 MIT License
