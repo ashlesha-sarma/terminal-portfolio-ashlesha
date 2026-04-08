@@ -9,7 +9,7 @@ export function WelcomeBanner() {
         <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
         <div className="w-3 h-3 rounded-full bg-green-500/80" />
         <span className="text-terminal-muted text-xs ml-2 font-mono">
-          ashlesha@portfolio — bash — 80×24
+          ashlesha@portfolio
         </span>
       </div>
 
