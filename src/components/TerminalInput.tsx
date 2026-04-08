@@ -46,25 +46,19 @@ export function TerminalInput({ onSubmit, inputRef }: TerminalInputProps) {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={handleKey}
-          className="bg-transparent text-white outline-none w-full text-sm caret-terminal-green font-mono z-10 relative"
+          className="bg-transparent text-white outline-none w-full text-sm caret-transparent font-mono z-10 relative"
           aria-label="Terminal input"
           spellCheck={false}
           autoComplete="off"
           autoCorrect="off"
           autoCapitalize="off"
         />
-        {/* Ghost autocomplete hint */}
-        {hint && (
-          <span className="absolute left-0 top-0 text-sm font-mono pointer-events-none select-none z-0">
-            <span className="text-transparent">{value}</span>
-            <span className="text-terminal-muted/50">{hint}</span>
-          </span>
-        )}
-
-        {/* Blinking block cursor (shows when input is empty to mimic terminal) */}
-        {!value && (
-          <span className="absolute left-0 w-2 h-4 bg-terminal-green animate-cursor-blink pointer-events-none z-0 ml-0.5 glow-green" />
-        )}
+        {/* Ghost autocomplete hint & Custom thick cursor */}
+        <div className="absolute left-0 top-0 text-sm font-mono pointer-events-none select-none z-0 mt-[1.5px] flex items-center">
+          <span className="text-transparent whitespace-pre">{value}</span>
+          <span className="w-2 h-4 bg-terminal-green animate-cursor-blink glow-green" />
+          {hint && <span className="text-terminal-muted/50 whitespace-pre">{hint}</span>}
+        </div>
       </div>
     </div>
   )
