@@ -60,12 +60,12 @@ export function TerminalInput({ onSubmit, inputRef }: TerminalInputProps) {
             <span className="text-terminal-muted/50">{hint}</span>
           </span>
         )}
-      </div>
 
-      {/* Blinking cursor block when input is empty and focused */}
-      {!value && (
-        <span className="inline-block w-2 h-4 bg-terminal-green animate-cursor-blink align-text-bottom ml-0.5 glow-green" />
-      )}
+        {/* Blinking block cursor (shows when input is empty to mimic terminal) */}
+        {!value && (
+          <span className="absolute left-0 w-2 h-4 bg-terminal-green animate-cursor-blink pointer-events-none z-0 ml-0.5 glow-green" />
+        )}
+      </div>
     </div>
   )
 }

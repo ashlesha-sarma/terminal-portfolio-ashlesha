@@ -20,9 +20,6 @@ export function SkillsOutput() {
           </div>
         </div>
       ))}
-      <p className="text-terminal-muted text-xs pt-2 border-t border-terminal-border/50">
-        always learning · currently deep in TypeScript + ML
-      </p>
     </div>
   )
 }

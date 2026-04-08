@@ -4,7 +4,6 @@ import { AboutOutput } from './about'
 import { ProjectsOutput } from './projects'
 import { SkillsOutput } from './skills'
 import { ContactOutput } from './contact'
-import { SudoOutput } from './sudo'
 
 const commandDescriptions: Record<string, string> = {
   about: 'Who I am · background · interests',
@@ -13,7 +12,6 @@ const commandDescriptions: Record<string, string> = {
   contact: 'Email · GitHub · LinkedIn',
   help: 'Show this help message',
   clear: 'Clear the terminal',
-  'sudo hire me': '👀',
 }
 
 function HelpOutput(): ReactNode {
@@ -41,8 +39,7 @@ export const commands: CommandRegistry = {
   contact: () => <ContactOutput />,
   help: () => <HelpOutput />,
   clear: () => '__CLEAR__',
-  'sudo hire me': () => <SudoOutput />,
 }
 
-export const commandNames = Object.keys(commands).filter((k) => k !== 'sudo hire me')
+export const commandNames = Object.keys(commands)
 export { commandDescriptions }

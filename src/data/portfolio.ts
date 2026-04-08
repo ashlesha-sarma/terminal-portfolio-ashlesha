@@ -1,83 +1,92 @@
 import { Project, ContactLink } from '../types/terminal'
 
 export const portfolioData = {
-  name: 'Ashlesha Sarma',
-  title: '2nd Year CSE Student',
-  university: 'Tezpur University',
-  secondDegree: 'BSc Data Science & AI · IIT Guwahati',
-  bio: 'I build things for the web and occasionally break them on purpose to understand them better. Passionate about elegant code, ML experiments, and open source contributions.',
-  interests: ['Machine Learning', 'Frontend Engineering', 'Open Source'],
-  location: 'Guwahati, Assam',
+  name: "Ashlesha Sarma",
+  title: "CS Engineering and Data Science & AI Student",
+  university: "Tezpur University",
+  secondDegree: "BSc Data Science & AI · IIT Guwahati",
+  bio: "CS Engineering and Data Science & AI student with hands-on experience building and deploying full-stack web applications end-to-end. I enjoy combining solid backend work with polished frontends — and occasionally training ML models in between.",
+  interests: ["Full-Stack Development", "Machine Learning", "Frontend Engineering"],
+  location: "Guwahati, Assam",
 }
 
 export const projects: Project[] = [
   {
-    name: 'StudyDeck',
-    desc: 'Spaced repetition flashcard app with SM-2 algorithm',
-    tech: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma'],
-    url: 'https://github.com/ashlesha/studydeck',
-    live: 'https://studydeck.vercel.app',
+    name: "CampusPaws",
+    desc: "Animal welfare & adoption platform with role-based auth, admin panel, and Razorpay payment integration",
+    tech: ["React 18", "Vite", "Node.js", "Express.js", "SQLite", "Razorpay", "Tailwind CSS"],
+    url: "https://github.com/ashlesha-sarma/CampusPaws",
+    live: "https://campuspaws.vercel.app",
   },
   {
-    name: 'NoteForge',
-    desc: 'Markdown note-taking app with real-time preview',
-    tech: ['React', 'TypeScript', 'CodeMirror', 'Zustand'],
-    url: 'https://github.com/ashlesha/noteforge',
+    name: "FloodSense Assam",
+    desc: "Real-time flood risk prediction dashboard for 33 Assam districts using ensemble ML on hydrological data",
+    tech: ["Python", "Flask", "Scikit-learn", "Leaflet.js", "GeoJSON", "Render"],
+    url: "https://github.com/ashlesha-sarma/FloodSense-Assam",
+    live: "https://floodsense-assam.onrender.com",
   },
   {
-    name: 'WeatherPulse',
-    desc: 'Minimalist weather dashboard with animated charts',
-    tech: ['React', 'Vite', 'Chart.js', 'OpenWeather API'],
-    url: 'https://github.com/ashlesha/weatherpulse',
-    live: 'https://weatherpulse.vercel.app',
+    name: "SkillMap",
+    desc: "Graph-based learning roadmap generator with topological sorting and TF-IDF keyword search",
+    tech: ["FastAPI", "Next.js 14", "TypeScript", "SQLite", "React Flow", "Docker"],
+    url: "https://github.com/ashlesha-sarma/SkillMap",
+    live: "https://skillmap.vercel.app",
   },
   {
-    name: 'TermFolio',
-    desc: 'This portfolio — a terminal-style React/TS portfolio',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    url: 'https://github.com/ashlesha/termfolio',
-    live: '#',
+    name: "AlgoQuest",
+    desc: "Gamified DSA learning platform with 5 interactive mini-games, XP system, and persistent leaderboard",
+    tech: ["Next.js 14", "Express.js", "PostgreSQL", "JWT", "Tailwind CSS"],
+    url: "https://github.com/ashlesha-sarma/AlgoQuest-DSA-game",
+    live: "https://algoquest-dsa.vercel.app",
   },
 ]
 
 export const skillGroups = [
   {
-    category: 'Languages',
-    items: ['TypeScript', 'Python', 'JavaScript', 'SQL', 'Bash'],
+    category: "Languages",
+    items: ["Python", "TypeScript", "JavaScript", "SQL", "C++"],
   },
   {
-    category: 'Frameworks',
-    items: ['React', 'Next.js', 'Tailwind CSS', 'FastAPI'],
+    category: "Frontend",
+    items: ["React.js", "Next.js 14", "Tailwind CSS", "React Flow", "Leaflet.js", "Vite"],
   },
   {
-    category: 'Tools',
-    items: ['Git', 'GitHub', 'Vite', 'VS Code', 'Docker'],
+    category: "Backend",
+    items: ["Node.js", "Express.js", "FastAPI", "Flask", "REST APIs", "JWT"],
   },
   {
-    category: 'AI / APIs',
-    items: ['Gemini API', 'OpenAI', 'Anthropic', 'HuggingFace'],
+    category: "Databases",
+    items: ["PostgreSQL", "SQLite"],
+  },
+  {
+    category: "ML / Data",
+    items: ["Scikit-learn", "PyTorch", "Pandas", "NumPy", "TF-IDF"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "GitHub", "Docker", "Vercel", "Render", "Gunicorn", "VS Code"],
   },
 ]
 
 export const contactLinks: ContactLink[] = [
   {
-    label: 'email',
-    href: 'mailto:ashlesha@example.com',
-    display: 'ashlesha@example.com',
+    label: "email",
+    href: "mailto:ashleshasarma.contact@gmail.com",
+    display: "ashleshasarma.contact@gmail.com",
   },
   {
-    label: 'github',
-    href: 'https://github.com/ashlesha',
-    display: 'github.com/ashlesha',
+    label: "github",
+    href: "https://github.com/ashlesha-sarma",
+    display: "github.com/ashlesha-sarma",
   },
   {
-    label: 'linkedin',
-    href: 'https://linkedin.com/in/ashlesha',
-    display: 'linkedin.com/in/ashlesha',
+    label: "linkedin",
+    href: "https://linkedin.com/in/ashlesha-sarma",
+    display: "linkedin.com/in/ashlesha-sarma",
   },
   {
-    label: 'twitter',
-    href: 'https://twitter.com/ashlesha_dev',
-    display: '@ashlesha_dev',
+    label: "portfolio",
+    href: "https://ashlesha-sarma-portfolio.vercel.app",
+    display: "ashlesha-sarma-portfolio.vercel.app",
   },
 ]
