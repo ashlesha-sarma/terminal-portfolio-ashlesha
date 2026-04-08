@@ -26,19 +26,14 @@ export function AboutOutput() {
           </div>
           <div className="text-terminal-muted text-xs space-y-1">
             <p>
-              <span className="text-terminal-purple">university</span>
+              <span className="text-terminal-purple">degree</span>
               <span className="text-terminal-muted mx-2">→</span>
-              <span className="text-gray-300">{portfolioData.university}</span>
+              <span className="text-gray-300">{portfolioData.primaryDegree}</span>
             </p>
             <p>
               <span className="text-terminal-purple">degree</span>
               <span className="text-terminal-muted mx-2">→</span>
               <span className="text-gray-300">{portfolioData.secondDegree}</span>
-            </p>
-            <p>
-              <span className="text-terminal-purple">location</span>
-              <span className="text-terminal-muted mx-2">→</span>
-              <span className="text-gray-300">{portfolioData.location}</span>
             </p>
           </div>
         </div>

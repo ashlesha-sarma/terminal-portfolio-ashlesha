@@ -3,8 +3,8 @@ import { Project, ContactLink } from '../types/terminal'
 export const portfolioData = {
   name: "Ashlesha Sarma",
   title: "CS Engineering and Data Science & AI Student",
-  university: "Tezpur University",
-  secondDegree: "BSc Data Science & AI · IIT Guwahati",
+  primaryDegree: 'B.Tech, Computer Science & Engineering · Tezpur University',
+  secondDegree: 'B.Sc. (Hons), Data Science & AI · IIT Guwahati (Online)',
   bio: "CS Engineering and Data Science & AI student with hands-on experience building and deploying full-stack web applications end-to-end. I enjoy combining solid backend work with polished frontends — and occasionally training ML models in between.",
   interests: ["Full-Stack Development", "Machine Learning", "Frontend Engineering"],
   location: "Guwahati, Assam",
